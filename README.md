@@ -79,7 +79,7 @@ To install other browsers
 
 (`a` inside w3m will download a link and save it to disk)
 
-### All sites requiring login
+### Firefox
 
 install: https://www.mozilla.org/en-US/firefox/new/
 configure: https://wiki.debian.org/Firefox
@@ -91,10 +91,19 @@ Custom:
 
 For now we will run `~/bin/firefox` directly but this will be a lookup PATH later
 
-### Everything else
+**addons**
 
-install: https://www.torproject.org/download/download-easy.html.en
-configure: https://wiki.debian.org/TorBrowser#AppArmor_confinement_and_Xserver_isolation
+* LastPass
+* HTTPS Everywhere
+* Impulse Blocker (twitter!)
+* Privacy Badger
+* uBlock Origin
+* Vim Vixen
+
+**search engines**
+
+* duckduckgo (default)
+* wikipedia
 
 ## Terminal
 
