@@ -109,7 +109,9 @@ For now we will run `~/bin/firefox` directly but this will be a lookup PATH late
 
 ### xterm
 
-`apt install xterm fonts-powerline`
+`apt install xterm`
+
+`cd Development && git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh`
 
 Place the [./xterm/.Xresources](./xterm/.Xresources) file at `~/.Xresources`
 
@@ -124,7 +126,24 @@ Place the [./zsh/.zshrc](./zsh/.zshrc) file at `~/.zshrc`
 
 ### vim
 
-`apt install vim`
+`apt install vim build-essential cmake python-dev python3-dev`
+
+`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+
+From inside vim: `:VundleInstall`
+
+**install node**
+
+curl -L https://git.io/n-install | bash
+
+npm install -g typescript
+
+**YouCompleteMe**
+
+```
+cd ~/.vim/bundle/YouCompleteMe/
+./install.py --js-completer --clang-completer
+```
 
 ## Misc packages
 
