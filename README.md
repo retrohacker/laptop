@@ -28,7 +28,6 @@ instead of `auto` use `allow-hotplug`
 
 Now use `wicd-curses` to configure and connect to wifi
 
-
 ## Install sudo
 
 `apt install sudo`
@@ -54,6 +53,18 @@ apt install --no-install-recommends lightdm
 ### Window Manager
 
 https://wiki.debian.org/Awesome
+
+Now move the files from [./awesome](./awesome) to `~/.config/awesome`
+
+I.E.
+
+```
+find awesome -type d -exec mkdir -p ~/.config/{} \;
+find awesome -type f -exec ln {} ~/.config/{} \;
+```
+
+(Bias towards linking files to avoid your config drifting out of state with the
+dotfile repo)
 
 ### Enable lightdm
 
@@ -106,6 +117,12 @@ For now we will run `~/bin/firefox` directly but this will be a lookup PATH late
 * wikipedia
 
 ## Terminal
+
+### ssh
+
+`ssh-keygen -t ed25519 && cat ~/.ssh/id_ed25519.pub | xclip`
+
+Now add ~/.ssh/id_ed25519.pub to github and gitlab
 
 ### xterm
 

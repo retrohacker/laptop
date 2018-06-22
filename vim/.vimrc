@@ -13,15 +13,15 @@ set rtp+=~/.vim/bundle/Vundle.vim
 let g:python_host_prog='/usr/bin/python'
 
 call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'           " Init vundle
-Plugin 'vim-airline/vim-airline'        " Status bar at bottom
-Plugin 'vim-airline/vim-airline-themes' " Status bar at bottom
-Plugin 'sheerun/vim-polyglot'           " Syntax for 70+ languages
-Plugin 'morhetz/gruvbox'                " Colorscheme
-Plugin 'Valloric/YouCompleteMe'         " Autocompletion
-Plugin 'ternjs/tern_for_vim'            " Autocompletion for JS
-Plugin 'airblade/vim-gitgutter'         " Git status in gutter
-Plugin 'ctrlpvim/ctrlp.vim'             " Fuzzy file finder
+Plugin 'VundleVim/Vundle.vim'             " Init vundle
+Plugin 'vim-airline/vim-airline'          " Status bar at bottom
+Plugin 'vim-airline/vim-airline-themes'   " Status bar at bottom
+Plugin 'sheerun/vim-polyglot'             " Syntax for 70+ languages
+Plugin 'Valloric/YouCompleteMe'           " Autocompletion
+Plugin 'ternjs/tern_for_vim'              " Autocompletion for JS
+Plugin 'airblade/vim-gitgutter'           " Git status in gutter
+Plugin 'ctrlpvim/ctrlp.vim'               " Fuzzy file finder
+Plugin 'altercation/vim-colors-solarized' " Solarized Theme
 call vundle#end()
 
 
@@ -29,20 +29,17 @@ call vundle#end()
 " Configure Airline
 " =================
 
-"let g:airline_powerline_fonts = 1   " Use powerline fonts
-let g:airline_theme='gruvbox'       " Make airline match colorscheme
+let g:airline_powerline_fonts = 1   " Use powerline fonts
 
 " ============
 " Color Scheme
 " ============
 
-"set termguicolors
 syntax enable
 set t_Co=256                        " 256 bit color
 set background=dark                 " dark backrgound
-let g:gruvbox_contrast_dark='hard'  " Extra bold colors
-let g:gruvbox_italic=1              " Ensure gruvbox uses italics
-colorscheme gruvbox
+let solarized_contrast="high"
+colorscheme solarized               " solarized colorscheme
 set list                            " Highlight unwanted chars
 set listchars=tab:>-,trail:~,extends:>,precedes:<
 set colorcolumn=80                  " Draw line at this character limit
