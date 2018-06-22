@@ -141,6 +141,13 @@ Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh):
 
 Place the [./zsh/.zshrc](./zsh/.zshrc) file at `~/.zshrc`
 
+### fzf
+
+```
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
+
 ### vim
 
 `apt install vim build-essential cmake python-dev python3-dev`
