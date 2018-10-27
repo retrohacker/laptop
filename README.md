@@ -66,6 +66,18 @@ find awesome -type f -exec ln {} ~/.config/{} \;
 (Bias towards linking files to avoid your config drifting out of state with the
 dotfile repo)
 
+### Setup path for ~/.bin scripts
+
+I like putting utility scripts and custom installed software in .bin under the
+user directory, this path needs to be set _before_ awesomewm spawns. Debian
+will run .xsessionrc prior to loading an xsession.
+
+Move the file `./xsessionrc` to `~/.xsessionrc`.
+
+```
+ln ./xsessionrc ~/.xsessionrc
+```
+
 ### Enable lightdm
 
 ```
