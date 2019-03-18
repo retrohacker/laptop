@@ -136,11 +136,19 @@ For now we will run `~/bin/firefox` directly but this will be a lookup PATH late
 
 Now add ~/.ssh/id_ed25519.pub to github and gitlab
 
+### git
+
+Setup the global ignore file:
+
+```
+git config --global core.excludesfile '~/Development/laptop/.gitignore'
+```
+
 ### xterm
 
 `apt install xterm`
 
-`cd Development && git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh`
+`cd ~/Development && git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh`
 
 Place the [./xterm/.Xresources](./xterm/.Xresources) file at `~/.Xresources`
 
