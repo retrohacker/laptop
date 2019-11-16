@@ -194,13 +194,13 @@ cd ~/.vim/bundle/YouCompleteMe/
 
 ## Misc packages
 
-* build-essential
+* build-essential 
 * gimp
 * gimp-plugin-registry
 * gnupg
 * htop
 * inkscape
-* ksnapshot
+* scrot
 * tree
 * vlc
 * xterm
