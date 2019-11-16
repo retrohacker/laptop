@@ -159,6 +159,9 @@ Place the [./xterm/.Xresources](./xterm/.Xresources) file at `~/.Xresources`
 Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh):
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 
+
+Next install [pure](https://github.com/sindresorhus/pure): `mkdir -p "$HOME/.zsh" && git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"`
+
 Place the [./zsh/.zshrc](./zsh/.zshrc) file at `~/.zshrc`
 
 ### fzf
