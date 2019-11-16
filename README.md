@@ -173,7 +173,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 ### vim
 
-`apt install vim build-essential cmake python-dev python3-dev`
+`apt install vim-nox build-essential cmake python-dev python3-dev`
 
 `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
