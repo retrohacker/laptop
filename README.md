@@ -203,4 +203,4 @@ cd ~/.vim/bundle/YouCompleteMe/
 * scrot
 * tree
 * vlc
-* xterm
+* gdebi
