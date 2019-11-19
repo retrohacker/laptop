@@ -204,3 +204,4 @@ cd ~/.vim/bundle/YouCompleteMe/
 * tree
 * vlc
 * gdebi
+* openvpn
